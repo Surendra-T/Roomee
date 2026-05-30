@@ -1,3 +1,5 @@
+// ignore_for_file: curly_braces_in_flow_control_structures
+
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -741,6 +743,7 @@ class _SwipeBackground extends StatelessWidget {
     return Container(
       alignment: alignment,
       padding: const EdgeInsets.symmetric(horizontal: 24),
+      // ignore: deprecated_member_use
       color: color.withOpacity(0.12),
       child: Icon(icon, color: color, size: 28),
     );
@@ -790,6 +793,7 @@ class _AcceptButton extends StatelessWidget {
               elevation: 0,
             ).copyWith(
               shadowColor: WidgetStateProperty.all(
+                // ignore: deprecated_member_use
                 AppColors.primaryAction.withOpacity(0.2),
               ),
               elevation: const WidgetStatePropertyAll(6),
